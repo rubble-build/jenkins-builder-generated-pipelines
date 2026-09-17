@@ -1,0 +1,31 @@
+{
+  "root": {
+    "id": "xa5mbhxvugnqirx52hsuqepcifb5socz5qx4tqspzlf67lpjpxha-webhook-20260917-failure",
+    "short": "xa5mbhx-webhook-20260917-failure",
+    "name": "webhook-20260917-failure"
+  },
+  "scheduler": {
+    "maxRunning": 3,
+    "maxReady": 8,
+    "cleanOnSuccess": true,
+    "buildScope": "all"
+  },
+  "buildScript": "rubble-generated/xa5mbhx-webhook-20260917-failure/build-brick.sh",
+  "tasks": {
+    "xa5mbhxvugnqirx52hsuqepcifb5socz5qx4tqspzlf67lpjpxha-webhook-20260917-failure": {
+      "short": "xa5mbhx-webhook-20260917-failure",
+      "name": "webhook-20260917-failure",
+      "displayName": "xa5mbhx-webhook-20260917-failure-webhook-20260917-failure",
+      "brickFile": "rubble-generated/xa5mbhx-webhook-20260917-failure/store/xa/5m/brk-xa5mbhxvugnqirx52hsuqepcifb5socz5qx4tqspzlf67lpjpxha-webhook-20260917-failure.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": true
+    }
+  }
+}

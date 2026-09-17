@@ -1,0 +1,20 @@
+{ "id": "xa5mbhxvugnqirx52hsuqepcifb5socz5qx4tqspzlf67lpjpxha-webhook-20260917-failure"
+, "name": "webhook-20260917-failure"
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "echo \"expected webhook acceptance failure\" >&2\n"
+        , "exit 37"
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}
