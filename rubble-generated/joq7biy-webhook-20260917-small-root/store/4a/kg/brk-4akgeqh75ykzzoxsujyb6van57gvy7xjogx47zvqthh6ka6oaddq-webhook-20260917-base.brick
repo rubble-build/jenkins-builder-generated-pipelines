@@ -1,0 +1,21 @@
+{ "id": "4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base"
+, "name": "webhook-20260917-base"
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "mkdir -p \"$out\"\n"
+        , "printf '%s\\n' \"base-ok\" > \"$out/base.txt\"\n"
+        , "grep -qx \"base-ok\" \"$out/base.txt\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+import org.jenkinsci.plugins.workflow.steps.FlowInterruptedException
+
+def DAG_MANIFEST = [
+  'buildScript': 'rubble-generated/joq7biy-webhook-20260917-small-root/build-brick.sh',
+  'root': [
+    'id': 'joq7biykf72mbynxaicjf2uyagk2qe5pfsgq74w76mpx54bduhna-webhook-20260917-small-root',
+    'name': 'webhook-20260917-small-root',
+    'short': 'joq7biy-webhook-20260917-small-root'
+  ],
+  'scheduler': [
+    'buildScope': 'all',
+    'cleanOnSuccess': true,
+    'maxReady': 8,
+    'maxRunning': 3
+  ],
+  'tasks': [
+    '4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base': [
+      'brickFile': 'rubble-generated/joq7biy-webhook-20260917-small-root/store/4a/kg/brk-4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base.brick',
+      'bundleUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar',
+      'deps': [],
+      'displayName': '4akgeqh-webhook-20260917-base-webhook-20260917-base',
+      'executionOsFamily': 'unix',
+      'importerUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh',
+      'isRoot': false,
+      'label': 'x86_64-linux',
+      'name': 'webhook-20260917-base',
+      'platform': 'x86_64-linux',
+      'prerequisites': [],
+      'runtimeId': 'll4wpv4-rubble',
+      'short': '4akgeqh-webhook-20260917-base'
+    ],
+    'joq7biykf72mbynxaicjf2uyagk2qe5pfsgq74w76mpx54bduhna-webhook-20260917-small-root': [
+      'brickFile': 'rubble-generated/joq7biy-webhook-20260917-small-root/store/jo/q7/brk-joq7biykf72mbynxaicjf2uyagk2qe5pfsgq74w76mpx54bduhna-webhook-20260917-small-root.brick',
+      'bundleUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar',
+      'deps': [
+        'vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right',
+        'rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left'
+      ],
+      'displayName': 'joq7biy-webhook-20260917-small-root-webhook-20260917-small-root',
+      'executionOsFamily': 'unix',
+      'importerUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh',
+      'isRoot': true,
+      'label': 'x86_64-linux',
+      'name': 'webhook-20260917-small-root',
+      'platform': 'x86_64-linux',
+      'prerequisites': [
+        'rubble-generated/joq7biy-webhook-20260917-small-root/store/vo/zs/brk-vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right.brick',
+        'rubble-generated/joq7biy-webhook-20260917-small-root/store/rl/yf/brk-rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left.brick'
+      ],
+      'runtimeId': 'll4wpv4-rubble',
+      'short': 'joq7biy-webhook-20260917-small-root'
+    ],
+    'rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left': [
+      'brickFile': 'rubble-generated/joq7biy-webhook-20260917-small-root/store/rl/yf/brk-rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left.brick',
+      'bundleUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar',
+      'deps': [
+        '4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base'
+      ],
+      'displayName': 'rlyfx2r-webhook-20260917-left-webhook-20260917-left',
+      'executionOsFamily': 'unix',
+      'importerUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh',
+      'isRoot': false,
+      'label': 'x86_64-linux',
+      'name': 'webhook-20260917-left',
+      'platform': 'x86_64-linux',
+      'prerequisites': [
+        'rubble-generated/joq7biy-webhook-20260917-small-root/store/4a/kg/brk-4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base.brick'
+      ],
+      'runtimeId': 'll4wpv4-rubble',
+      'short': 'rlyfx2r-webhook-20260917-left'
+    ],
+    'vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right': [
+      'brickFile': 'rubble-generated/joq7biy-webhook-20260917-small-root/store/vo/zs/brk-vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right.brick',
+      'bundleUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar',
+      'deps': [
+        '4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base'
+      ],
+      'displayName': 'vozsoti-webhook-20260917-right-webhook-20260917-right',
+      'executionOsFamily': 'unix',
+      'importerUrl': 'https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh',
+      'isRoot': false,
+      'label': 'x86_64-linux',
+      'name': 'webhook-20260917-right',
+      'platform': 'x86_64-linux',
+      'prerequisites': [
+        'rubble-generated/joq7biy-webhook-20260917-small-root/store/4a/kg/brk-4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base.brick'
+      ],
+      'runtimeId': 'll4wpv4-rubble',
+      'short': 'vozsoti-webhook-20260917-right'
+    ]
+  ]
+]
+
+@NonCPS
+void validateDag(Map tasks) {
+  List names = tasks.keySet().collect { it.toString() }
+  Map indegree = [:]
+  Map children = [:]
+
+  for (String name in names) {
+    if (name == 'failFast') {
+      throw new IllegalArgumentException("Task id 'failFast' is reserved by Jenkins parallel")
+    }
+    indegree[name] = 0
+    children[name] = []
+  }
+
+  for (def entry in tasks.entrySet()) {
+    String name = entry.key.toString()
+    Map task = (Map) entry.value
+    List deps = ((task.get('deps') ?: []) as List).collect { it.toString() }
+    List seen = []
+    for (String dep in deps) {
+      if (!names.contains(dep)) {
+        throw new IllegalArgumentException("Task '${name}' depends on unknown task '${dep}'")
+      }
+      if (dep == name) {
+        throw new IllegalArgumentException("Task '${name}' depends on itself")
+      }
+      if (seen.contains(dep)) {
+        throw new IllegalArgumentException("Task '${name}' has duplicated dependency '${dep}'")
+      }
+      seen.add(dep)
+      indegree[name] = ((Integer) indegree[name]) + 1
+      ((List) children[dep]).add(name)
+    }
+  }
+
+  List q = []
+  for (String name in names) {
+    if (((Integer) indegree[name]) == 0) {
+      q.add(name)
+    }
+  }
+
+  int seenCount = 0
+  while (!q.isEmpty()) {
+    String name = q.remove(0).toString()
+    seenCount++
+    for (String child in (List) children[name]) {
+      int next = ((Integer) indegree[child]) - 1
+      indegree[child] = next
+      if (next == 0) {
+        q.add(child)
+      }
+    }
+  }
+
+  if (seenCount != tasks.size()) {
+    throw new IllegalArgumentException("DAG contains cycle. tasks=${tasks.size()}, reachable=${seenCount}")
+  }
+}
+
+@NonCPS
+void initializeStatus(Map state, Set taskKeys) {
+  synchronized (state) {
+    Map status = (Map) state.get('status')
+    for (def keyObj in taskKeys) {
+      status[keyObj.toString()] = 'WAITING'
+    }
+  }
+}
+
+@NonCPS
+boolean depsFinished(List deps, Map state) {
+  synchronized (state) {
+    Map status = (Map) state.get('status')
+    for (def depObj in deps) {
+      String dep = depObj.toString()
+      String s = (String) status.get(dep)
+      if (!(s == 'SUCCESS' || s == 'FAILED' || s == 'SKIPPED' || s == 'ABORTED')) {
+        return false
+      }
+    }
+    return true
+  }
+}
+
+@NonCPS
+String firstBadDependency(List deps, Map state) {
+  synchronized (state) {
+    Map status = (Map) state.get('status')
+    for (def depObj in deps) {
+      String dep = depObj.toString()
+      String s = (String) status.get(dep)
+      if (s != 'SUCCESS') {
+        return "${dep}:${s}"
+      }
+    }
+    return null
+  }
+}
+
+@NonCPS
+boolean tryAcquireSlot(Map state, String key, int limit) {
+  synchronized (state) {
+    Map counters = (Map) state.get('counters')
+    int current = ((Integer) counters.get(key))
+    if (current >= limit) {
+      return false
+    }
+    counters[key] = current + 1
+    return true
+  }
+}
+
+@NonCPS
+void releaseSlot(Map state, String key) {
+  synchronized (state) {
+    Map counters = (Map) state.get('counters')
+    int current = ((Integer) counters.get(key))
+    counters[key] = current > 0 ? current - 1 : 0
+  }
+}
+
+@NonCPS
+void markTask(Map state, String id, String value) {
+  synchronized (state) {
+    ((Map) state.get('status'))[id] = value
+  }
+}
+
+@NonCPS
+void recordTaskError(Map state, String id, String value) {
+  synchronized (state) {
+    ((Map) state.get('errors'))[id] = value
+  }
+}
+
+@NonCPS
+List failedTasks(Map tasks, Map state) {
+  synchronized (state) {
+    Map status = (Map) state.get('status')
+    List failed = []
+    for (def key in tasks.keySet()) {
+      String id = key.toString()
+      String s = ((String) status.get(id)) ?: 'MISSING'
+      if (s != 'SUCCESS') {
+        failed.add("${id}=${s}")
+      }
+    }
+    return failed
+  }
+}
+
+@NonCPS
+String resultSummary(Map tasks, Map state) {
+  synchronized (state) {
+    Map status = (Map) state.get('status')
+    Map errors = (Map) state.get('errors')
+    Map counts = [:]
+    List lines = []
+    for (def key in tasks.keySet()) {
+      String id = key.toString()
+      String s = ((String) status.get(id)) ?: 'MISSING'
+      counts[s] = (counts[s] ?: 0) + 1
+    }
+    lines.add('DAG result: ' + counts.collect { k, v -> "${k}=${v}" }.join(', '))
+    for (def key in tasks.keySet()) {
+      String id = key.toString()
+      String s = ((String) status.get(id)) ?: 'MISSING'
+      if (s != 'SUCCESS') {
+        String err = (String) errors.get(id)
+        lines.add(err ? "${id}: ${s}; ${err}" : "${id}: ${s}")
+      }
+    }
+    return lines.join('\n')
+  }
+}
+
+@NonCPS
+String shellQuote(String value) {
+  return "'" + value.replace("'", "'\"'\"'") + "'"
+}
+
+@NonCPS
+String batchQuote(String value) {
+  return '"' + value.replace('^', '^^').replace('%', '%%').replace('"', '""') + '"'
+}
+
+String validateRepoRelativePath(String rawValue, String label, boolean allowEmpty) {
+  String value = (rawValue ?: '').toString()
+  for (int i = 0; i < value.length(); i++) {
+    int code = (int) value.charAt(i)
+    if (code < 32 || code == 127) {
+      error "${label} must not contain control characters"
+    }
+  }
+  if (value.indexOf('\\') >= 0) {
+    error "${label} must use '/' separators"
+  }
+  if (value.startsWith('/')) {
+    error "${label} must be relative to the SCM checkout"
+  }
+  if (value ==~ /(?i)^[a-z]:.*/) {
+    error "${label} must not use a Windows drive prefix"
+  }
+  while (value.endsWith('/')) {
+    value = value.substring(0, value.length() - 1)
+  }
+  if (value.isEmpty()) {
+    if (allowEmpty) {
+      return ''
+    }
+    error "${label} must not be empty"
+  }
+
+  String[] segments = value.split('/', -1)
+  for (String segment : segments) {
+    if (segment.isEmpty() || segment == '.' || segment == '..') {
+      error "${label} must not contain empty, '.', or '..' path segments"
+    }
+  }
+  return value
+}
+
+String payloadRootPrefix() {
+  return validateRepoRelativePath((params.RUBBLE_PUBLISH_PAYLOAD_PREFIX ?: '').toString(), 'Rubble payload prefix', true)
+}
+
+String repoPath(String payloadPrefix, String path) {
+  String normalizedPath = validateRepoRelativePath(path.toString(), 'Jenkins manifest path', false)
+  if (payloadPrefix.isEmpty()) {
+    return normalizedPath
+  }
+  return "${payloadPrefix}/${normalizedPath}"
+}
+
+int schedulerInt(Map scheduler, String key, int defaultValue) {
+  def raw = scheduler.get(key)
+  if (raw == null) {
+    return defaultValue
+  }
+  int value = Integer.parseInt(raw.toString())
+  if (value < 1) {
+    throw new IllegalArgumentException("scheduler.${key} must be >= 1")
+  }
+  return value
+}
+
+int buildParamInt(String name, int defaultValue) {
+  def raw = params.get(name)
+  if (raw == null || raw.toString().trim().isEmpty()) {
+    return defaultValue
+  }
+  int value = Integer.parseInt(raw.toString())
+  if (value < 1) {
+    throw new IllegalArgumentException("${name} must be >= 1")
+  }
+  return value
+}
+
+boolean schedulerBool(Map scheduler, String key, boolean defaultValue) {
+  def raw = scheduler.get(key)
+  if (raw == null) {
+    return defaultValue
+  }
+  return raw.toString().toBoolean()
+}
+
+void acquireSlot(Map state, String key, int limit) {
+  waitUntil(initialRecurrencePeriod: 1000L, quiet: true) {
+    return tryAcquireSlot(state, key, limit)
+  }
+}
+
+void runTask(String id, Map task, String payloadPrefix, String buildScript, boolean cleanOnSuccess) {
+  node(task.label.toString()) {
+    checkout scm
+    String brickFile = repoPath(payloadPrefix, task.brickFile.toString())
+    List payloads = [brickFile] + ((List) task.prerequisites).collect { repoPath(payloadPrefix, it.toString()) }
+    boolean windows = task.executionOsFamily == 'windows'
+    String runnerOs = windows ? 'Windows' : sh(script: 'uname -s', returnStdout: true).trim()
+    String runnerArch = windows ? env.PROCESSOR_ARCHITECTURE : sh(script: 'uname -m', returnStdout: true).trim()
+    String jobTemp = "${pwd(tmp: true)}/rubble-${env.BUILD_NUMBER}-${id}"
+    String invocation = windows ? "bash ${batchQuote(buildScript)}" : "bash ${shellQuote(buildScript)}"
+    String arguments = payloads.collect { windows ? batchQuote(it) : shellQuote(it) }.join(' ')
+
+    withEnv([
+
+      "RUBBLE_PIPELINE_ID=42dcb7c9-f763-4f30-82b2-0cc2174074eb",
+      "RUBBLE_ON_RUNNER=1",
+      "RUBBLE_BRICK_ID=${id}",
+      "RUBBLE_BUILD_PLATFORM=${task.platform}",
+      "RUBBLE_RUNNER_OS=${runnerOs}",
+      "RUBBLE_RUNNER_ARCH=${runnerArch}",
+      "RUBBLE_JOB_TEMP=${jobTemp}",
+      "RUBBLE_CLEAN_ON_SUCCESS=${cleanOnSuccess}",
+      "RUBBLE_BUNDLE_URL=${task.bundleUrl}",
+      "RUBBLE_IMPORTER_URL=${task.importerUrl}",
+      "RUBBLE_EXPECTED_RUNTIME_ID=${task.runtimeId}"
+    ]) {
+      boolean succeeded = false
+      try {
+        if (windows) { bat "${invocation} build ${arguments}" }
+        else { sh "${invocation} build ${arguments}" }
+        if (task.isRoot) {
+          if (windows) { bat "${invocation} release" }
+          else { sh "${invocation} release" }
+        }
+        succeeded = true
+      } finally {
+        int status = windows ? bat(script: "${invocation} cleanup", returnStatus: true) : sh(script: "${invocation} cleanup", returnStatus: true)
+        if (status != 0) {
+          if (succeeded) { error "Rubble cleanup failed: ${status}" }
+          else { echo "Rubble cleanup also failed: ${status}" }
+        }
+      }
+    }
+
+  }
+}
+
+def makeTaskBranch(
+  String id,
+  Map tasks,
+  Map state,
+  int maxRunning,
+  int maxReady,
+  String payloadPrefix,
+  String buildScript,
+  boolean cleanOnSuccess
+) {
+  return {
+    Map task = (Map) tasks[id]
+    List deps = ((task.get('deps') ?: []) as List).collect { it.toString() }
+    String displayName = (task.get('displayName') ?: id).toString()
+
+    waitUntil(initialRecurrencePeriod: 1000L, quiet: true) {
+      return depsFinished(deps, state)
+    }
+
+    String blockedBy = firstBadDependency(deps, state)
+    if (blockedBy != null) {
+      markTask(state, id, 'SKIPPED')
+      recordTaskError(state, id, "blocked by upstream ${blockedBy}")
+      echo "[DAG] skip ${displayName}; blocked by ${blockedBy}"
+      return
+    }
+
+    boolean readyAcquired = false
+    boolean runningAcquired = false
+
+    try {
+      acquireSlot(state, 'readyWaiting', maxReady)
+      readyAcquired = true
+      acquireSlot(state, 'running', maxRunning)
+      runningAcquired = true
+      releaseSlot(state, 'readyWaiting')
+      readyAcquired = false
+
+      markTask(state, id, 'RUNNING')
+      echo "[DAG] start ${displayName}"
+
+      stage(displayName) {
+        runTask(id, task, payloadPrefix, buildScript, cleanOnSuccess)
+      }
+
+      markTask(state, id, 'SUCCESS')
+      echo "[DAG] success ${displayName}"
+    } catch (FlowInterruptedException e) {
+      markTask(state, id, 'ABORTED')
+      recordTaskError(state, id, e.toString())
+      throw e
+    } catch (Throwable e) {
+      markTask(state, id, 'FAILED')
+      recordTaskError(state, id, e.toString())
+      echo "[DAG] failed ${displayName}: ${e}"
+    } finally {
+      if (readyAcquired) {
+        releaseSlot(state, 'readyWaiting')
+      }
+      if (runningAcquired) {
+        releaseSlot(state, 'running')
+      }
+    }
+  }
+}
+
+void runDag(Map manifest) {
+  Map tasks = (Map) manifest.get('tasks')
+  if (tasks == null || tasks.isEmpty()) {
+    throw new IllegalArgumentException('DAG task list is empty')
+  }
+  validateDag(tasks)
+  Map scheduler = ((Map) manifest.get('scheduler')) ?: [:]
+  int maxRunning = buildParamInt('RUBBLE_PUBLISH_MAX_RUNNING', schedulerInt(scheduler, 'maxRunning', 3))
+  int maxReady = buildParamInt('RUBBLE_PUBLISH_MAX_READY', schedulerInt(scheduler, 'maxReady', 8))
+  boolean cleanOnSuccess = schedulerBool(scheduler, 'cleanOnSuccess', false)
+  String payloadPrefix = payloadRootPrefix()
+  String buildScript = repoPath(payloadPrefix, (manifest.get('buildScript') ?: 'rubble-generated/joq7biy-webhook-20260917-small-root/build-brick.sh').toString())
+
+  // Each task checks out scm independently. For one-shot SCM jobs, Jenkins binds
+  // scm to this run's fixed repository branch and Jenkinsfile path.
+  Map state = [
+    status: [:],
+    errors: [:],
+    counters: [running: 0, readyWaiting: 0]
+  ]
+  initializeStatus(state, tasks.keySet())
+
+  def branches = [:]
+  for (def key in tasks.keySet()) {
+    String id = key.toString()
+    branches[id] = makeTaskBranch(
+      id,
+      tasks,
+      state,
+      maxRunning,
+      maxReady,
+      payloadPrefix,
+      buildScript,
+      cleanOnSuccess
+    )
+  }
+  branches.failFast = false
+
+  parallel branches
+
+  echo resultSummary(tasks, state)
+  List failed = failedTasks(tasks, state)
+  if (!failed.isEmpty()) {
+    error "DAG failed: ${failed.join(', ')}"
+  }
+}
+
+stage('Load DAG') {
+  validateDag((Map) DAG_MANIFEST.tasks)
+  echo "Loaded DAG tasks: ${((Map) DAG_MANIFEST.tasks).size()}"
+}
+
+stage('Run DAG') {
+  runDag(DAG_MANIFEST)
+}

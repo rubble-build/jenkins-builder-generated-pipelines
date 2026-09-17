@@ -1,0 +1,112 @@
+{ "id": "joq7biykf72mbynxaicjf2uyagk2qe5pfsgq74w76mpx54bduhna-webhook-20260917-small-root"
+, "name": "webhook-20260917-small-root"
+, "inputs": [
+    { "brick": "vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right"
+    , "alias": "right"
+    , "transitive": "false"
+    }
+  , { "brick": "rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left"
+    , "alias": "left"
+    , "transitive": "false"
+    }
+  ]
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "mkdir -p \"$out\"\n"
+        , "grep -qx \"left-ok\" \"$left/left.txt\"\n"
+        , "grep -qx \"right-ok\" \"$right/right.txt\"\n"
+        , "printf '%s\\n' \"small-root-ok\" > \"$out/result.txt\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+, "inventory": {
+    "4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base":
+      { "id": "4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base"
+      , "name": "webhook-20260917-base"
+      , "env": [
+          { "name": "IMPURE_ENV"
+          , "value": "all_proxy http_proxy https_proxy no_proxy" }
+        ]
+      , "outputs": [
+          { "name": "out" }
+        ]
+      , "builder": [
+          { "shell": {
+              "value": [
+                "mkdir -p \"$out\"\n"
+              , "printf '%s\\n' \"base-ok\" > \"$out/base.txt\"\n"
+              , "grep -qx \"base-ok\" \"$out/base.txt\""
+              ]
+            , "format": "text"
+            }
+          }
+        ]
+      }
+  , "vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right":
+      { "id": "vozsoti3hfmeatsb2pjdqyclnri7gpzau67jimnqlrqjmqtbxrma-webhook-20260917-right"
+      , "name": "webhook-20260917-right"
+      , "inputs": [
+          { "brick": "4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base"
+          , "alias": "base"
+          , "transitive": "false"
+          }
+        ]
+      , "env": [
+          { "name": "IMPURE_ENV"
+          , "value": "all_proxy http_proxy https_proxy no_proxy" }
+        ]
+      , "outputs": [
+          { "name": "out" }
+        ]
+      , "builder": [
+          { "shell": {
+              "value": [
+                "mkdir -p \"$out\"\n"
+              , "grep -qx \"base-ok\" \"$base/base.txt\"\n"
+              , "printf '%s\\n' \"right-ok\" > \"$out/right.txt\""
+              ]
+            , "format": "text"
+            }
+          }
+        ]
+      }
+  , "rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left":
+      { "id": "rlyfx2rjtq37plu6ynf3f5i63u62yfpxg3vgw5q6r7dvq6p35fka-webhook-20260917-left"
+      , "name": "webhook-20260917-left"
+      , "inputs": [
+          { "brick": "4akgeqh75ykzzoxsujyb6van57gvy7xjogx47zvqthh6ka6oaddq-webhook-20260917-base"
+          , "alias": "base"
+          , "transitive": "false"
+          }
+        ]
+      , "env": [
+          { "name": "IMPURE_ENV"
+          , "value": "all_proxy http_proxy https_proxy no_proxy" }
+        ]
+      , "outputs": [
+          { "name": "out" }
+        ]
+      , "builder": [
+          { "shell": {
+              "value": [
+                "mkdir -p \"$out\"\n"
+              , "grep -qx \"base-ok\" \"$base/base.txt\"\n"
+              , "printf '%s\\n' \"left-ok\" > \"$out/left.txt\""
+              ]
+            , "format": "text"
+            }
+          }
+        ]
+      }
+  }
+}
