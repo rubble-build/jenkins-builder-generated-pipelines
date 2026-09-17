@@ -1,0 +1,21 @@
+{ "id": "wntiwkx6xs6qeodzkncqcov7z2jde7iao72zz3ck5fk3sbhwy67q-webhook-20260917-one-node"
+, "name": "webhook-20260917-one-node"
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "mkdir -p \"$out\"\n"
+        , "printf '%s\\n' \"one-node-ok\" > \"$out/result.txt\"\n"
+        , "grep -qx \"one-node-ok\" \"$out/result.txt\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

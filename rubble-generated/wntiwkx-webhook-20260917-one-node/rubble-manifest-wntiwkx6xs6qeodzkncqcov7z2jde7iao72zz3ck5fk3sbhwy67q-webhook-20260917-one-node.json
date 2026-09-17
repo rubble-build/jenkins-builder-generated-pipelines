@@ -1,0 +1,31 @@
+{
+  "root": {
+    "id": "wntiwkx6xs6qeodzkncqcov7z2jde7iao72zz3ck5fk3sbhwy67q-webhook-20260917-one-node",
+    "short": "wntiwkx-webhook-20260917-one-node",
+    "name": "webhook-20260917-one-node"
+  },
+  "scheduler": {
+    "maxRunning": 3,
+    "maxReady": 8,
+    "cleanOnSuccess": true,
+    "buildScope": "all"
+  },
+  "buildScript": "rubble-generated/wntiwkx-webhook-20260917-one-node/build-brick.sh",
+  "tasks": {
+    "wntiwkx6xs6qeodzkncqcov7z2jde7iao72zz3ck5fk3sbhwy67q-webhook-20260917-one-node": {
+      "short": "wntiwkx-webhook-20260917-one-node",
+      "name": "webhook-20260917-one-node",
+      "displayName": "wntiwkx-webhook-20260917-one-node-webhook-20260917-one-node",
+      "brickFile": "rubble-generated/wntiwkx-webhook-20260917-one-node/store/wn/ti/brk-wntiwkx6xs6qeodzkncqcov7z2jde7iao72zz3ck5fk3sbhwy67q-webhook-20260917-one-node.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": true
+    }
+  }
+}
