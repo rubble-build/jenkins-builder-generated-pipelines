@@ -6,3 +6,5 @@ rubble-exec mkdir -p -- "${RUBBLE_RELEASE_DIR:?}/assets"
 "${rubble}" script --inherit-env rubble-inventory-bundle export \
   --output "${RUBBLE_RELEASE_DIR}/assets/${RUBBLE_ROOT_ID:0:7}-${RUBBLE_ROOT_NAME}.tar" \
   --depth 0 --inventory-file "${RUBBLE_RELEASE_INVENTORY}" "${RUBBLE_ROOT_BRICK}"
+
+printf "[acceptance] prepare-release root=%s\n" "$RUBBLE_ROOT_ID"
