@@ -1,0 +1,1017 @@
+{
+  "root": {
+    "id": "v3quhux6x2wxcs5velotvdwtzffbqk5xm4elmmidy6uuq7h65xwa-rubble",
+    "short": "v3quhux-rubble",
+    "name": "rubble"
+  },
+  "scheduler": {
+    "maxRunning": 3,
+    "maxReady": 8,
+    "cleanOnSuccess": true,
+    "buildScope": "missing"
+  },
+  "buildScript": "rubble-generated/v3quhux-rubble/build-brick.sh",
+  "tasks": {
+    "26tn2yq4ryvlust5j46r2gfdg7ew7zg7gpth4bowtw5vxvj5xeiq-findutils": {
+      "short": "26tn2yq-findutils",
+      "name": "findutils",
+      "displayName": "26tn2yq-findutils-findutils",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/26/tn/brk-26tn2yq4ryvlust5j46r2gfdg7ew7zg7gpth4bowtw5vxvj5xeiq-findutils.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "2gvgtrr4d2gpg5yhr2mym73arbvecrjt5uiucaqrz2y5wy5u44va-cargo-1.94.0": {
+      "short": "2gvgtrr-cargo-1.94.0",
+      "name": "cargo-1.94.0",
+      "displayName": "2gvgtrr-cargo-1.94.0-cargo-1.94.0",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/2g/vg/brk-2gvgtrr4d2gpg5yhr2mym73arbvecrjt5uiucaqrz2y5wy5u44va-cargo-1.94.0.brick",
+      "deps": [
+        "uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/up/on/brk-uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc.brick"
+      ],
+      "isRoot": false
+    },
+    "3ktt7h4cpkoe5mv4b2racn4da4dmxqy4anesjsxu65hi2matudmq-llvm-tools-1.94.0": {
+      "short": "3ktt7h4-llvm-tools-1.94.0",
+      "name": "llvm-tools-1.94.0",
+      "displayName": "3ktt7h4-llvm-tools-1.94.0-llvm-tools-1.94.0",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/3k/tt/brk-3ktt7h4cpkoe5mv4b2racn4da4dmxqy4anesjsxu65hi2matudmq-llvm-tools-1.94.0.brick",
+      "deps": [
+        "uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc",
+        "hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/up/on/brk-uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc.brick",
+        "rubble-generated/v3quhux-rubble/store/he/cn/brk-hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0.brick"
+      ],
+      "isRoot": false
+    },
+    "3ymsqx4irog2cwz3opdekqpw4otufpn5qdjdmbgzswfjrt23imbq-zstd": {
+      "short": "3ymsqx4-zstd",
+      "name": "zstd",
+      "displayName": "3ymsqx4-zstd-zstd",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/3y/ms/brk-3ymsqx4irog2cwz3opdekqpw4otufpn5qdjdmbgzswfjrt23imbq-zstd.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env": {
+      "short": "46lfnhi-bootstrap-env",
+      "name": "bootstrap-env",
+      "displayName": "46lfnhi-bootstrap-env-bootstrap-env",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/46/lf/brk-46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env.brick",
+      "deps": [
+        "3ymsqx4irog2cwz3opdekqpw4otufpn5qdjdmbgzswfjrt23imbq-zstd",
+        "wluwjucbrlkece4f3oq2qk6uxprq3t7h2ogids4ymiz4nsvjqmwa-xz",
+        "vjkfcfgkm77x6m2ulurl7euwz2rnspl5pijijlqq5wmu4fcyn6la-unzip",
+        "cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4",
+        "b6du7m4wvh6hhvuzjxtbgjxv3kmgap4w2jh2mjw7ztfs2mbseida-gzip",
+        "xpq3y53udiwojwu3cmwsgbqn7pkk6y74expqaf4ss6goibdgypuq-grep",
+        "toyyhmevribb7khuvecg75ctwezy43ob5us3fe232gwncayr5hkq-gpatch",
+        "6itbkpqgk46i34vxf2bxe2jjugitys6463c73qfk5fhiipwku4ha-gnu-sed",
+        "cdgy6susoq245z4mch7qbgfzwfyqzywqchtfoveem66yiwhb4qba-gnu-make",
+        "pw37lfr3ixpwcll66ytcwfkezsbh2smxf77zdjlx6ox6vwlifwxa-gawk",
+        "26tn2yq4ryvlust5j46r2gfdg7ew7zg7gpth4bowtw5vxvj5xeiq-findutils",
+        "vvyhmuysr2vjsftzfyed3zekunsonl6t34mrh55zkb3mmepagjsa-diffutils",
+        "adcrhlud4lao22xpeqdtkmm3cbdxrk4yn7hqqh4y2wguzsupqiqq-curl",
+        "n6475wvske6j4dxfuhhbk6gplesuoo6c3tzd2p4bk5cciypjdqna-ca-certificates.pem",
+        "itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2",
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash",
+        "x63s7v4qom7r4x7j6vg6y7p2sofdrxxj3dgw7fqdqftwwhjpixaq-perl",
+        "zy6bvkew2exlrwyg3zjlgc47llzncsko4l6kssqxbtdjpcoe4wbq-git",
+        "xt64bpkydygjzezkokdv36klu36dn4cnhm762iasa23j2g4qwyoq-gcc",
+        "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison",
+        "6fyi5giuhq2rktxlfg2epgwit5rqik345vr2o25yognyocmskspq-gnu-tar",
+        "ppdghkityovkxogtghygvs2mls7qza646xifdh4qt3pdr7enpi2a-coreutils"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/3y/ms/brk-3ymsqx4irog2cwz3opdekqpw4otufpn5qdjdmbgzswfjrt23imbq-zstd.brick",
+        "rubble-generated/v3quhux-rubble/store/wl/uw/brk-wluwjucbrlkece4f3oq2qk6uxprq3t7h2ogids4ymiz4nsvjqmwa-xz.brick",
+        "rubble-generated/v3quhux-rubble/store/vj/kf/brk-vjkfcfgkm77x6m2ulurl7euwz2rnspl5pijijlqq5wmu4fcyn6la-unzip.brick",
+        "rubble-generated/v3quhux-rubble/store/cc/a6/brk-cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4.brick",
+        "rubble-generated/v3quhux-rubble/store/b6/du/brk-b6du7m4wvh6hhvuzjxtbgjxv3kmgap4w2jh2mjw7ztfs2mbseida-gzip.brick",
+        "rubble-generated/v3quhux-rubble/store/xp/q3/brk-xpq3y53udiwojwu3cmwsgbqn7pkk6y74expqaf4ss6goibdgypuq-grep.brick",
+        "rubble-generated/v3quhux-rubble/store/to/yy/brk-toyyhmevribb7khuvecg75ctwezy43ob5us3fe232gwncayr5hkq-gpatch.brick",
+        "rubble-generated/v3quhux-rubble/store/6i/tb/brk-6itbkpqgk46i34vxf2bxe2jjugitys6463c73qfk5fhiipwku4ha-gnu-sed.brick",
+        "rubble-generated/v3quhux-rubble/store/cd/gy/brk-cdgy6susoq245z4mch7qbgfzwfyqzywqchtfoveem66yiwhb4qba-gnu-make.brick",
+        "rubble-generated/v3quhux-rubble/store/pw/37/brk-pw37lfr3ixpwcll66ytcwfkezsbh2smxf77zdjlx6ox6vwlifwxa-gawk.brick",
+        "rubble-generated/v3quhux-rubble/store/26/tn/brk-26tn2yq4ryvlust5j46r2gfdg7ew7zg7gpth4bowtw5vxvj5xeiq-findutils.brick",
+        "rubble-generated/v3quhux-rubble/store/vv/yh/brk-vvyhmuysr2vjsftzfyed3zekunsonl6t34mrh55zkb3mmepagjsa-diffutils.brick",
+        "rubble-generated/v3quhux-rubble/store/ad/cr/brk-adcrhlud4lao22xpeqdtkmm3cbdxrk4yn7hqqh4y2wguzsupqiqq-curl.brick",
+        "rubble-generated/v3quhux-rubble/store/n6/47/brk-n6475wvske6j4dxfuhhbk6gplesuoo6c3tzd2p4bk5cciypjdqna-ca-certificates.pem.brick",
+        "rubble-generated/v3quhux-rubble/store/it/xg/brk-itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2.brick",
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+        "rubble-generated/v3quhux-rubble/store/x6/3s/brk-x63s7v4qom7r4x7j6vg6y7p2sofdrxxj3dgw7fqdqftwwhjpixaq-perl.brick",
+        "rubble-generated/v3quhux-rubble/store/zy/6b/brk-zy6bvkew2exlrwyg3zjlgc47llzncsko4l6kssqxbtdjpcoe4wbq-git.brick",
+        "rubble-generated/v3quhux-rubble/store/xt/64/brk-xt64bpkydygjzezkokdv36klu36dn4cnhm762iasa23j2g4qwyoq-gcc.brick",
+        "rubble-generated/v3quhux-rubble/store/bt/u4/brk-btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison.brick",
+        "rubble-generated/v3quhux-rubble/store/6f/yi/brk-6fyi5giuhq2rktxlfg2epgwit5rqik345vr2o25yognyocmskspq-gnu-tar.brick",
+        "rubble-generated/v3quhux-rubble/store/pp/dg/brk-ppdghkityovkxogtghygvs2mls7qza646xifdh4qt3pdr7enpi2a-coreutils.brick"
+      ],
+      "isRoot": false
+    },
+    "4q2h276sdua43q6llgpn75j67n5s66dbegpra6ilud4jwgjrb6za-rubble-web-node-modules": {
+      "short": "4q2h276-rubble-web-node-modules",
+      "name": "rubble-web-node-modules",
+      "displayName": "4q2h276-rubble-web-node-modules-rubble-web-node-modules",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/4q/2h/brk-4q2h276sdua43q6llgpn75j67n5s66dbegpra6ilud4jwgjrb6za-rubble-web-node-modules.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "6fyi5giuhq2rktxlfg2epgwit5rqik345vr2o25yognyocmskspq-gnu-tar": {
+      "short": "6fyi5gi-gnu-tar",
+      "name": "gnu-tar",
+      "displayName": "6fyi5gi-gnu-tar-gnu-tar",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/6f/yi/brk-6fyi5giuhq2rktxlfg2epgwit5rqik345vr2o25yognyocmskspq-gnu-tar.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "6itbkpqgk46i34vxf2bxe2jjugitys6463c73qfk5fhiipwku4ha-gnu-sed": {
+      "short": "6itbkpq-gnu-sed",
+      "name": "gnu-sed",
+      "displayName": "6itbkpq-gnu-sed-gnu-sed",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/6i/tb/brk-6itbkpqgk46i34vxf2bxe2jjugitys6463c73qfk5fhiipwku4ha-gnu-sed.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "adcrhlud4lao22xpeqdtkmm3cbdxrk4yn7hqqh4y2wguzsupqiqq-curl": {
+      "short": "adcrhlu-curl",
+      "name": "curl",
+      "displayName": "adcrhlu-curl-curl",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/ad/cr/brk-adcrhlud4lao22xpeqdtkmm3cbdxrk4yn7hqqh4y2wguzsupqiqq-curl.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "b57nqsuvg6a3nqogxdj23cnmu7dhsxee5tpnaine4g22jf4siwhq-RubbleR.git": {
+      "short": "b57nqsu-RubbleR.git",
+      "name": "RubbleR.git",
+      "displayName": "b57nqsu-RubbleR.git-RubbleR.git",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/b5/7n/brk-b57nqsuvg6a3nqogxdj23cnmu7dhsxee5tpnaine4g22jf4siwhq-RubbleR.git.brick",
+      "deps": [
+        "ryjwb6a3ynqdajbncvpdzwephlmhpxe56zvtgfs4cv4x5lvdguca-rubble-src-checkout",
+        "xpsu7cfnztrrwbvvhovnnlzvjzp3f6qf6funj7ehcobaqgpnx6ha-rubble-canonical-script",
+        "46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/ry/jw/brk-ryjwb6a3ynqdajbncvpdzwephlmhpxe56zvtgfs4cv4x5lvdguca-rubble-src-checkout.brick",
+        "rubble-generated/v3quhux-rubble/store/xp/su/brk-xpsu7cfnztrrwbvvhovnnlzvjzp3f6qf6funj7ehcobaqgpnx6ha-rubble-canonical-script.brick",
+        "rubble-generated/v3quhux-rubble/store/46/lf/brk-46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env.brick"
+      ],
+      "isRoot": false
+    },
+    "b6dqx7grj7sdvz4idoeankvdh33a6czxdhn42na3sdl2w5p2ckuq-nodejs": {
+      "short": "b6dqx7g-nodejs",
+      "name": "nodejs",
+      "displayName": "b6dqx7g-nodejs-nodejs",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/b6/dq/brk-b6dqx7grj7sdvz4idoeankvdh33a6czxdhn42na3sdl2w5p2ckuq-nodejs.brick",
+      "deps": [
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash",
+        "ghchiozjtl2ibn4fj6cqsjqwccmgb4bjneutfqoawhgozjexoboq-python3",
+        "jp4nke5sdzqmyvapf2eldbwlmy5cbvjyapsqjlluunq3cuddjciq-nodejs-runtime"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+        "rubble-generated/v3quhux-rubble/store/gh/ch/brk-ghchiozjtl2ibn4fj6cqsjqwccmgb4bjneutfqoawhgozjexoboq-python3.brick",
+        "rubble-generated/v3quhux-rubble/store/jp/4n/brk-jp4nke5sdzqmyvapf2eldbwlmy5cbvjyapsqjlluunq3cuddjciq-nodejs-runtime.brick"
+      ],
+      "isRoot": false
+    },
+    "b6du7m4wvh6hhvuzjxtbgjxv3kmgap4w2jh2mjw7ztfs2mbseida-gzip": {
+      "short": "b6du7m4-gzip",
+      "name": "gzip",
+      "displayName": "b6du7m4-gzip-gzip",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/b6/du/brk-b6du7m4wvh6hhvuzjxtbgjxv3kmgap4w2jh2mjw7ztfs2mbseida-gzip.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison": {
+      "short": "btu4wde-bison",
+      "name": "bison",
+      "displayName": "btu4wde-bison-bison",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/bt/u4/brk-btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so",
+        "cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4",
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/v3quhux-rubble/store/cc/a6/brk-cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4.brick",
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "isRoot": false
+    },
+    "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash": {
+      "short": "bxchorb-bash",
+      "name": "bash",
+      "displayName": "bxchorb-bash-bash",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4": {
+      "short": "cca6hpd-m4",
+      "name": "m4",
+      "displayName": "cca6hpd-m4-m4",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/cc/a6/brk-cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "cdgy6susoq245z4mch7qbgfzwfyqzywqchtfoveem66yiwhb4qba-gnu-make": {
+      "short": "cdgy6su-gnu-make",
+      "name": "gnu-make",
+      "displayName": "cdgy6su-gnu-make-gnu-make",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/cd/gy/brk-cdgy6susoq245z4mch7qbgfzwfyqzywqchtfoveem66yiwhb4qba-gnu-make.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "dpvr6zncl6lb7virjbpejxfou5xxwyxmixehunwg45vicdq5xk2a-linux-native-toolchain": {
+      "short": "dpvr6zn-linux-native-toolchain",
+      "name": "linux-native-toolchain",
+      "displayName": "dpvr6zn-linux-native-toolchain-linux-native-toolchain",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/dp/vr/brk-dpvr6zncl6lb7virjbpejxfou5xxwyxmixehunwg45vicdq5xk2a-linux-native-toolchain.brick",
+      "deps": [
+        "x63s7v4qom7r4x7j6vg6y7p2sofdrxxj3dgw7fqdqftwwhjpixaq-perl",
+        "uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/x6/3s/brk-x63s7v4qom7r4x7j6vg6y7p2sofdrxxj3dgw7fqdqftwwhjpixaq-perl.brick",
+        "rubble-generated/v3quhux-rubble/store/up/on/brk-uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc.brick"
+      ],
+      "isRoot": false
+    },
+    "eopsbz4ia2xmktldjshfv6bferpwxnexagroon63m4ryp3nu6lgq-wasm-bindgen-cli-0.2.115": {
+      "short": "eopsbz4-wasm-bindgen-cli-0.2.115",
+      "name": "wasm-bindgen-cli-0.2.115",
+      "displayName": "eopsbz4-wasm-bindgen-cli-0.2.115-wasm-bindgen-cli-0.2.115",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/eo/ps/brk-eopsbz4ia2xmktldjshfv6bferpwxnexagroon63m4ryp3nu6lgq-wasm-bindgen-cli-0.2.115.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "fgev4nl6voxqnpjcdv22zjsjg2glrmni2hxpemrkiv6ywnp4nw3q-RubbleR.git.partial": {
+      "short": "fgev4nl-RubbleR.git.partial",
+      "name": "RubbleR.git.partial",
+      "displayName": "fgev4nl-RubbleR.git.partial-RubbleR.git.partial",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/fg/ev/brk-fgev4nl6voxqnpjcdv22zjsjg2glrmni2hxpemrkiv6ywnp4nw3q-RubbleR.git.partial.brick",
+      "deps": [
+        "ryjwb6a3ynqdajbncvpdzwephlmhpxe56zvtgfs4cv4x5lvdguca-rubble-src-checkout",
+        "xpsu7cfnztrrwbvvhovnnlzvjzp3f6qf6funj7ehcobaqgpnx6ha-rubble-canonical-script",
+        "46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/ry/jw/brk-ryjwb6a3ynqdajbncvpdzwephlmhpxe56zvtgfs4cv4x5lvdguca-rubble-src-checkout.brick",
+        "rubble-generated/v3quhux-rubble/store/xp/su/brk-xpsu7cfnztrrwbvvhovnnlzvjzp3f6qf6funj7ehcobaqgpnx6ha-rubble-canonical-script.brick",
+        "rubble-generated/v3quhux-rubble/store/46/lf/brk-46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env.brick"
+      ],
+      "isRoot": false
+    },
+    "fixyxtubjce4dymecvxexikh6mzfekp7qe2gv4fmmahyd73gnzma-rubble-deps-cache": {
+      "short": "fixyxtu-rubble-deps-cache",
+      "name": "rubble-deps-cache",
+      "displayName": "fixyxtu-rubble-deps-cache-rubble-deps-cache",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/fi/xy/brk-fixyxtubjce4dymecvxexikh6mzfekp7qe2gv4fmmahyd73gnzma-rubble-deps-cache.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "ghchiozjtl2ibn4fj6cqsjqwccmgb4bjneutfqoawhgozjexoboq-python3": {
+      "short": "ghchioz-python3",
+      "name": "python3",
+      "displayName": "ghchioz-python3-python3",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/gh/ch/brk-ghchiozjtl2ibn4fj6cqsjqwccmgb4bjneutfqoawhgozjexoboq-python3.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so",
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash",
+        "ppdghkityovkxogtghygvs2mls7qza646xifdh4qt3pdr7enpi2a-coreutils"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+        "rubble-generated/v3quhux-rubble/store/pp/dg/brk-ppdghkityovkxogtghygvs2mls7qza646xifdh4qt3pdr7enpi2a-coreutils.brick"
+      ],
+      "isRoot": false
+    },
+    "hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0": {
+      "short": "hecnfft-rustc-1.94.0",
+      "name": "rustc-1.94.0",
+      "displayName": "hecnfft-rustc-1.94.0-rustc-1.94.0",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/he/cn/brk-hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0.brick",
+      "deps": [
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash",
+        "uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+        "rubble-generated/v3quhux-rubble/store/up/on/brk-uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc.brick"
+      ],
+      "isRoot": false
+    },
+    "hseqkp4htbof2oy5ft32zmuk6nrjwse7qhf2e7nlyfrrphs3sc5a-wasm-pack-0.15.0": {
+      "short": "hseqkp4-wasm-pack-0.15.0",
+      "name": "wasm-pack-0.15.0",
+      "displayName": "hseqkp4-wasm-pack-0.15.0-wasm-pack-0.15.0",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/hs/eq/brk-hseqkp4htbof2oy5ft32zmuk6nrjwse7qhf2e7nlyfrrphs3sc5a-wasm-pack-0.15.0.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2": {
+      "short": "itxgxgp-bzip2",
+      "name": "bzip2",
+      "displayName": "itxgxgp-bzip2-bzip2",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/it/xg/brk-itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "iyjypwircokg6krpk3iuqjdqbet3joqufbfsylg5mnjav52ljpua-rust-web-wasm-toolchain": {
+      "short": "iyjypwi-rust-web-wasm-toolchain",
+      "name": "rust-web-wasm-toolchain",
+      "displayName": "iyjypwi-rust-web-wasm-toolchain-rust-web-wasm-toolchain",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/iy/jy/brk-iyjypwircokg6krpk3iuqjdqbet3joqufbfsylg5mnjav52ljpua-rust-web-wasm-toolchain.brick",
+      "deps": [
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash",
+        "hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0",
+        "3ktt7h4cpkoe5mv4b2racn4da4dmxqy4anesjsxu65hi2matudmq-llvm-tools-1.94.0",
+        "dpvr6zncl6lb7virjbpejxfou5xxwyxmixehunwg45vicdq5xk2a-linux-native-toolchain",
+        "2gvgtrr4d2gpg5yhr2mym73arbvecrjt5uiucaqrz2y5wy5u44va-cargo-1.94.0"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+        "rubble-generated/v3quhux-rubble/store/he/cn/brk-hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0.brick",
+        "rubble-generated/v3quhux-rubble/store/3k/tt/brk-3ktt7h4cpkoe5mv4b2racn4da4dmxqy4anesjsxu65hi2matudmq-llvm-tools-1.94.0.brick",
+        "rubble-generated/v3quhux-rubble/store/dp/vr/brk-dpvr6zncl6lb7virjbpejxfou5xxwyxmixehunwg45vicdq5xk2a-linux-native-toolchain.brick",
+        "rubble-generated/v3quhux-rubble/store/2g/vg/brk-2gvgtrr4d2gpg5yhr2mym73arbvecrjt5uiucaqrz2y5wy5u44va-cargo-1.94.0.brick"
+      ],
+      "isRoot": false
+    },
+    "jp4nke5sdzqmyvapf2eldbwlmy5cbvjyapsqjlluunq3cuddjciq-nodejs-runtime": {
+      "short": "jp4nke5-nodejs-runtime",
+      "name": "nodejs-runtime",
+      "displayName": "jp4nke5-nodejs-runtime-nodejs-runtime",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/jp/4n/brk-jp4nke5sdzqmyvapf2eldbwlmy5cbvjyapsqjlluunq3cuddjciq-nodejs-runtime.brick",
+      "deps": [
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash",
+        "ghchiozjtl2ibn4fj6cqsjqwccmgb4bjneutfqoawhgozjexoboq-python3",
+        "tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick",
+        "rubble-generated/v3quhux-rubble/store/gh/ch/brk-ghchiozjtl2ibn4fj6cqsjqwccmgb4bjneutfqoawhgozjexoboq-python3.brick",
+        "rubble-generated/v3quhux-rubble/store/tv/ix/brk-tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime.brick"
+      ],
+      "isRoot": false
+    },
+    "ke3qt7hdnwxs47c3ycjzayeukm5m743srnompdhat42tvaorirrq-rubble-web-assets": {
+      "short": "ke3qt7h-rubble-web-assets",
+      "name": "rubble-web-assets",
+      "displayName": "ke3qt7h-rubble-web-assets-rubble-web-assets",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/ke/3q/brk-ke3qt7hdnwxs47c3ycjzayeukm5m743srnompdhat42tvaorirrq-rubble-web-assets.brick",
+      "deps": [
+        "46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env",
+        "hseqkp4htbof2oy5ft32zmuk6nrjwse7qhf2e7nlyfrrphs3sc5a-wasm-pack-0.15.0",
+        "eopsbz4ia2xmktldjshfv6bferpwxnexagroon63m4ryp3nu6lgq-wasm-bindgen-cli-0.2.115",
+        "yz2gkzppzklqwxcexejnusirhckaj5q3znbfvnvabxdkbrjrduaq-binaryen-117",
+        "fgev4nl6voxqnpjcdv22zjsjg2glrmni2hxpemrkiv6ywnp4nw3q-RubbleR.git.partial",
+        "b6dqx7grj7sdvz4idoeankvdh33a6czxdhn42na3sdl2w5p2ckuq-nodejs",
+        "iyjypwircokg6krpk3iuqjdqbet3joqufbfsylg5mnjav52ljpua-rust-web-wasm-toolchain",
+        "fixyxtubjce4dymecvxexikh6mzfekp7qe2gv4fmmahyd73gnzma-rubble-deps-cache",
+        "4q2h276sdua43q6llgpn75j67n5s66dbegpra6ilud4jwgjrb6za-rubble-web-node-modules"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/46/lf/brk-46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env.brick",
+        "rubble-generated/v3quhux-rubble/store/hs/eq/brk-hseqkp4htbof2oy5ft32zmuk6nrjwse7qhf2e7nlyfrrphs3sc5a-wasm-pack-0.15.0.brick",
+        "rubble-generated/v3quhux-rubble/store/eo/ps/brk-eopsbz4ia2xmktldjshfv6bferpwxnexagroon63m4ryp3nu6lgq-wasm-bindgen-cli-0.2.115.brick",
+        "rubble-generated/v3quhux-rubble/store/yz/2g/brk-yz2gkzppzklqwxcexejnusirhckaj5q3znbfvnvabxdkbrjrduaq-binaryen-117.brick",
+        "rubble-generated/v3quhux-rubble/store/fg/ev/brk-fgev4nl6voxqnpjcdv22zjsjg2glrmni2hxpemrkiv6ywnp4nw3q-RubbleR.git.partial.brick",
+        "rubble-generated/v3quhux-rubble/store/b6/dq/brk-b6dqx7grj7sdvz4idoeankvdh33a6czxdhn42na3sdl2w5p2ckuq-nodejs.brick",
+        "rubble-generated/v3quhux-rubble/store/iy/jy/brk-iyjypwircokg6krpk3iuqjdqbet3joqufbfsylg5mnjav52ljpua-rust-web-wasm-toolchain.brick",
+        "rubble-generated/v3quhux-rubble/store/fi/xy/brk-fixyxtubjce4dymecvxexikh6mzfekp7qe2gv4fmmahyd73gnzma-rubble-deps-cache.brick",
+        "rubble-generated/v3quhux-rubble/store/4q/2h/brk-4q2h276sdua43q6llgpn75j67n5s66dbegpra6ilud4jwgjrb6za-rubble-web-node-modules.brick"
+      ],
+      "isRoot": false
+    },
+    "n6475wvske6j4dxfuhhbk6gplesuoo6c3tzd2p4bk5cciypjdqna-ca-certificates.pem": {
+      "short": "n6475wv-ca-certificates.pem",
+      "name": "ca-certificates.pem",
+      "displayName": "n6475wv-ca-certificates.pem-ca-certificates.pem",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/n6/47/brk-n6475wvske6j4dxfuhhbk6gplesuoo6c3tzd2p4bk5cciypjdqna-ca-certificates.pem.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "pktwewtwfe5eg3k5tr4cbfakejnkwk4vmnxyqfb3zkwum2rxpxfq-glibc-runtime-support": {
+      "short": "pktwewt-glibc-runtime-support",
+      "name": "glibc-runtime-support",
+      "displayName": "pktwewt-glibc-runtime-support-glibc-runtime-support",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/pk/tw/brk-pktwewtwfe5eg3k5tr4cbfakejnkwk4vmnxyqfb3zkwum2rxpxfq-glibc-runtime-support.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "ppdghkityovkxogtghygvs2mls7qza646xifdh4qt3pdr7enpi2a-coreutils": {
+      "short": "ppdghki-coreutils",
+      "name": "coreutils",
+      "displayName": "ppdghki-coreutils-coreutils",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/pp/dg/brk-ppdghkityovkxogtghygvs2mls7qza646xifdh4qt3pdr7enpi2a-coreutils.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "pw37lfr3ixpwcll66ytcwfkezsbh2smxf77zdjlx6ox6vwlifwxa-gawk": {
+      "short": "pw37lfr-gawk",
+      "name": "gawk",
+      "displayName": "pw37lfr-gawk-gawk",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/pw/37/brk-pw37lfr3ixpwcll66ytcwfkezsbh2smxf77zdjlx6ox6vwlifwxa-gawk.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "qcy4v2y3ag67kk2t4lcxynj7ggg3bgwitfras34m4a4losfnw7ha-rust-toolchain": {
+      "short": "qcy4v2y-rust-toolchain",
+      "name": "rust-toolchain",
+      "displayName": "qcy4v2y-rust-toolchain-rust-toolchain",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/qc/y4/brk-qcy4v2y3ag67kk2t4lcxynj7ggg3bgwitfras34m4a4losfnw7ha-rust-toolchain.brick",
+      "deps": [
+        "hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0",
+        "3ktt7h4cpkoe5mv4b2racn4da4dmxqy4anesjsxu65hi2matudmq-llvm-tools-1.94.0",
+        "dpvr6zncl6lb7virjbpejxfou5xxwyxmixehunwg45vicdq5xk2a-linux-native-toolchain",
+        "2gvgtrr4d2gpg5yhr2mym73arbvecrjt5uiucaqrz2y5wy5u44va-cargo-1.94.0"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/he/cn/brk-hecnfft6yktxoi7yeh4xxz4unpght7p5ya35dtsbntdhaebpbqaq-rustc-1.94.0.brick",
+        "rubble-generated/v3quhux-rubble/store/3k/tt/brk-3ktt7h4cpkoe5mv4b2racn4da4dmxqy4anesjsxu65hi2matudmq-llvm-tools-1.94.0.brick",
+        "rubble-generated/v3quhux-rubble/store/dp/vr/brk-dpvr6zncl6lb7virjbpejxfou5xxwyxmixehunwg45vicdq5xk2a-linux-native-toolchain.brick",
+        "rubble-generated/v3quhux-rubble/store/2g/vg/brk-2gvgtrr4d2gpg5yhr2mym73arbvecrjt5uiucaqrz2y5wy5u44va-cargo-1.94.0.brick"
+      ],
+      "isRoot": false
+    },
+    "ryjwb6a3ynqdajbncvpdzwephlmhpxe56zvtgfs4cv4x5lvdguca-rubble-src-checkout": {
+      "short": "ryjwb6a-rubble-src-checkout",
+      "name": "rubble-src-checkout",
+      "displayName": "ryjwb6a-rubble-src-checkout-rubble-src-checkout",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/ry/jw/brk-ryjwb6a3ynqdajbncvpdzwephlmhpxe56zvtgfs4cv4x5lvdguca-rubble-src-checkout.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "shidbibgptsswa33nbpjwlsxa3kcz7mxtobh33lkji6l2bz7pgka-bun-1.4.2": {
+      "short": "shidbib-bun-1.4.2",
+      "name": "bun-1.4.2",
+      "displayName": "shidbib-bun-1.4.2-bun-1.4.2",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/sh/id/brk-shidbibgptsswa33nbpjwlsxa3kcz7mxtobh33lkji6l2bz7pgka-bun-1.4.2.brick",
+      "deps": [
+        "tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/tv/ix/brk-tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime.brick"
+      ],
+      "isRoot": false
+    },
+    "teieaxxyjdoyw4gqby5r4ywgrstjp3t6ui4dxasa6j7ba34arziq-patchelf": {
+      "short": "teieaxx-patchelf",
+      "name": "patchelf",
+      "displayName": "teieaxx-patchelf-patchelf",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/te/ie/brk-teieaxxyjdoyw4gqby5r4ywgrstjp3t6ui4dxasa6j7ba34arziq-patchelf.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "toyyhmevribb7khuvecg75ctwezy43ob5us3fe232gwncayr5hkq-gpatch": {
+      "short": "toyyhme-gpatch",
+      "name": "gpatch",
+      "displayName": "toyyhme-gpatch-gpatch",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/to/yy/brk-toyyhmevribb7khuvecg75ctwezy43ob5us3fe232gwncayr5hkq-gpatch.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime": {
+      "short": "tvixmyb-rubble-elf-runtime",
+      "name": "rubble-elf-runtime",
+      "displayName": "tvixmyb-rubble-elf-runtime-rubble-elf-runtime",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/tv/ix/brk-tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc": {
+      "short": "uponfvj-gcc-glibc",
+      "name": "gcc-glibc",
+      "displayName": "uponfvj-gcc-glibc-gcc-glibc",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/up/on/brk-uponfvj6pefnvsurlqpyw22eznhrunf2cw2p5uu46wzoydakpceq-gcc-glibc.brick",
+      "deps": [
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "isRoot": false
+    },
+    "v3quhux6x2wxcs5velotvdwtzffbqk5xm4elmmidy6uuq7h65xwa-rubble": {
+      "short": "v3quhux-rubble",
+      "name": "rubble",
+      "displayName": "v3quhux-rubble-rubble",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/v3/qu/brk-v3quhux6x2wxcs5velotvdwtzffbqk5xm4elmmidy6uuq7h65xwa-rubble.brick",
+      "deps": [
+        "teieaxxyjdoyw4gqby5r4ywgrstjp3t6ui4dxasa6j7ba34arziq-patchelf",
+        "46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env",
+        "pktwewtwfe5eg3k5tr4cbfakejnkwk4vmnxyqfb3zkwum2rxpxfq-glibc-runtime-support",
+        "tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime",
+        "qcy4v2y3ag67kk2t4lcxynj7ggg3bgwitfras34m4a4losfnw7ha-rust-toolchain",
+        "fixyxtubjce4dymecvxexikh6mzfekp7qe2gv4fmmahyd73gnzma-rubble-deps-cache",
+        "shidbibgptsswa33nbpjwlsxa3kcz7mxtobh33lkji6l2bz7pgka-bun-1.4.2",
+        "ke3qt7hdnwxs47c3ycjzayeukm5m743srnompdhat42tvaorirrq-rubble-web-assets",
+        "b57nqsuvg6a3nqogxdj23cnmu7dhsxee5tpnaine4g22jf4siwhq-RubbleR.git"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/te/ie/brk-teieaxxyjdoyw4gqby5r4ywgrstjp3t6ui4dxasa6j7ba34arziq-patchelf.brick",
+        "rubble-generated/v3quhux-rubble/store/46/lf/brk-46lfnhiwl7xwedh2m5nqmsiz53zc3vcpqiox4v4mctm56nzwlz6a-bootstrap-env.brick",
+        "rubble-generated/v3quhux-rubble/store/pk/tw/brk-pktwewtwfe5eg3k5tr4cbfakejnkwk4vmnxyqfb3zkwum2rxpxfq-glibc-runtime-support.brick",
+        "rubble-generated/v3quhux-rubble/store/tv/ix/brk-tvixmybabsgwepyqt72yuhquuoeqcckd2i27zucfmmuz4af4byxa-rubble-elf-runtime.brick",
+        "rubble-generated/v3quhux-rubble/store/qc/y4/brk-qcy4v2y3ag67kk2t4lcxynj7ggg3bgwitfras34m4a4losfnw7ha-rust-toolchain.brick",
+        "rubble-generated/v3quhux-rubble/store/fi/xy/brk-fixyxtubjce4dymecvxexikh6mzfekp7qe2gv4fmmahyd73gnzma-rubble-deps-cache.brick",
+        "rubble-generated/v3quhux-rubble/store/sh/id/brk-shidbibgptsswa33nbpjwlsxa3kcz7mxtobh33lkji6l2bz7pgka-bun-1.4.2.brick",
+        "rubble-generated/v3quhux-rubble/store/ke/3q/brk-ke3qt7hdnwxs47c3ycjzayeukm5m743srnompdhat42tvaorirrq-rubble-web-assets.brick",
+        "rubble-generated/v3quhux-rubble/store/b5/7n/brk-b57nqsuvg6a3nqogxdj23cnmu7dhsxee5tpnaine4g22jf4siwhq-RubbleR.git.brick"
+      ],
+      "isRoot": true
+    },
+    "vjkfcfgkm77x6m2ulurl7euwz2rnspl5pijijlqq5wmu4fcyn6la-unzip": {
+      "short": "vjkfcfg-unzip",
+      "name": "unzip",
+      "displayName": "vjkfcfg-unzip-unzip",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/vj/kf/brk-vjkfcfgkm77x6m2ulurl7euwz2rnspl5pijijlqq5wmu4fcyn6la-unzip.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "vvyhmuysr2vjsftzfyed3zekunsonl6t34mrh55zkb3mmepagjsa-diffutils": {
+      "short": "vvyhmuy-diffutils",
+      "name": "diffutils",
+      "displayName": "vvyhmuy-diffutils-diffutils",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/vv/yh/brk-vvyhmuysr2vjsftzfyed3zekunsonl6t34mrh55zkb3mmepagjsa-diffutils.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "wluwjucbrlkece4f3oq2qk6uxprq3t7h2ogids4ymiz4nsvjqmwa-xz": {
+      "short": "wluwjuc-xz",
+      "name": "xz",
+      "displayName": "wluwjuc-xz-xz",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/wl/uw/brk-wluwjucbrlkece4f3oq2qk6uxprq3t7h2ogids4ymiz4nsvjqmwa-xz.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "x63s7v4qom7r4x7j6vg6y7p2sofdrxxj3dgw7fqdqftwwhjpixaq-perl": {
+      "short": "x63s7v4-perl",
+      "name": "perl",
+      "displayName": "x63s7v4-perl-perl",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/x6/3s/brk-x63s7v4qom7r4x7j6vg6y7p2sofdrxxj3dgw7fqdqftwwhjpixaq-perl.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so",
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "isRoot": false
+    },
+    "xpq3y53udiwojwu3cmwsgbqn7pkk6y74expqaf4ss6goibdgypuq-grep": {
+      "short": "xpq3y53-grep",
+      "name": "grep",
+      "displayName": "xpq3y53-grep-grep",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/xp/q3/brk-xpq3y53udiwojwu3cmwsgbqn7pkk6y74expqaf4ss6goibdgypuq-grep.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "isRoot": false
+    },
+    "xpsu7cfnztrrwbvvhovnnlzvjzp3f6qf6funj7ehcobaqgpnx6ha-rubble-canonical-script": {
+      "short": "xpsu7cf-rubble-canonical-script",
+      "name": "rubble-canonical-script",
+      "displayName": "xpsu7cf-rubble-canonical-script-rubble-canonical-script",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/xp/su/brk-xpsu7cfnztrrwbvvhovnnlzvjzp3f6qf6funj7ehcobaqgpnx6ha-rubble-canonical-script.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "xt64bpkydygjzezkokdv36klu36dn4cnhm762iasa23j2g4qwyoq-gcc": {
+      "short": "xt64bpk-gcc",
+      "name": "gcc",
+      "displayName": "xt64bpk-gcc-gcc",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/xt/64/brk-xt64bpkydygjzezkokdv36klu36dn4cnhm762iasa23j2g4qwyoq-gcc.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so",
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "isRoot": false
+    },
+    "yz2gkzppzklqwxcexejnusirhckaj5q3znbfvnvabxdkbrjrduaq-binaryen-117": {
+      "short": "yz2gkzp-binaryen-117",
+      "name": "binaryen-117",
+      "displayName": "yz2gkzp-binaryen-117-binaryen-117",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/yz/2g/brk-yz2gkzppzklqwxcexejnusirhckaj5q3znbfvnvabxdkbrjrduaq-binaryen-117.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so": {
+      "short": "zkiff2c-ld-musl.so",
+      "name": "ld-musl.so",
+      "displayName": "zkiff2c-ld-musl.so-ld-musl.so",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [],
+      "isRoot": false
+    },
+    "zy6bvkew2exlrwyg3zjlgc47llzncsko4l6kssqxbtdjpcoe4wbq-git": {
+      "short": "zy6bvke-git",
+      "name": "git",
+      "displayName": "zy6bvke-git-git",
+      "brickFile": "rubble-generated/v3quhux-rubble/store/zy/6b/brk-zy6bvkew2exlrwyg3zjlgc47llzncsko4l6kssqxbtdjpcoe4wbq-git.brick",
+      "deps": [
+        "zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so",
+        "n6475wvske6j4dxfuhhbk6gplesuoo6c3tzd2p4bk5cciypjdqna-ca-certificates.pem",
+        "bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260917013701-35170775039-1/x86_64-linux-ll4wpv4-rubble.tar",
+      "runtimeId": "ll4wpv4-rubble",
+      "prerequisites": [
+        "rubble-generated/v3quhux-rubble/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/v3quhux-rubble/store/n6/47/brk-n6475wvske6j4dxfuhhbk6gplesuoo6c3tzd2p4bk5cciypjdqna-ca-certificates.pem.brick",
+        "rubble-generated/v3quhux-rubble/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "isRoot": false
+    }
+  }
+}
