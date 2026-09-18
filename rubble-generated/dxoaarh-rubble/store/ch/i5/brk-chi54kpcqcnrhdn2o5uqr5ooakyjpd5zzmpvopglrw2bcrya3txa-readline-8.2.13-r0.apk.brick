@@ -1,0 +1,28 @@
+{ "id": "chi54kpcqcnrhdn2o5uqr5ooakyjpd5zzmpvopglrw2bcrya3txa-readline-8.2.13-r0.apk"
+, "name": "readline-8.2.13-r0.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/readline-8.2.13-r0.apk"
+  , "checksum": "sha256:fa4ff2347886f5516d021b9064a00259b29fc6e2608eac5588a339de244acf12"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

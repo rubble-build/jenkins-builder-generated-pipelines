@@ -1,0 +1,28 @@
+{ "id": "gnh47phed75uwi3vbxi5scokhxo64p5gcafwkkjx6oowdevwnhga-c-ares-1.34.8-r0.apk"
+, "name": "c-ares-1.34.8-r0.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/c-ares-1.34.8-r0.apk"
+  , "checksum": "sha256:1c184e0bccdab868e155c3c242c743b5861d785d982860d8a84ead0f4b06530c"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

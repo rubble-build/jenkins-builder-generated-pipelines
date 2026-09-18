@@ -1,0 +1,28 @@
+{ "id": "77wn4qjjc5t6dj7mhudt2agj5mzd6q6d4xeucta7zjc6vj44pmqq-libcurl-8.14.1-r2.apk"
+, "name": "libcurl-8.14.1-r2.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/libcurl-8.14.1-r2.apk"
+  , "checksum": "sha256:e6f76cb875242f30d5e174ef228a698b73e718217f82f7cc749a6c190672d992"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

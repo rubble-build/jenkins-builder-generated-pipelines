@@ -1,0 +1,28 @@
+{ "id": "jnmg45vg4ddydtuugrzlidkaux7kjxduijdqlfs3fgcoewkrrnfa-gcc-14.2.0-r4.apk"
+, "name": "gcc-14.2.0-r4.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/gcc-14.2.0-r4.apk"
+  , "checksum": "sha256:6727367ddd0c58203ac4e9b96a30d371e92da64c4b0f7b1b2afbd512c80a61be"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

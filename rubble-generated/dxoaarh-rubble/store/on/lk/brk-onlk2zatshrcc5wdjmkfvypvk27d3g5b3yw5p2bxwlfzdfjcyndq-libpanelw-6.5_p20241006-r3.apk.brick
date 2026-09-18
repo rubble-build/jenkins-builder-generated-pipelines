@@ -1,0 +1,28 @@
+{ "id": "onlk2zatshrcc5wdjmkfvypvk27d3g5b3yw5p2bxwlfzdfjcyndq-libpanelw-6.5_p20241006-r3.apk"
+, "name": "libpanelw-6.5_p20241006-r3.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/libpanelw-6.5_p20241006-r3.apk"
+  , "checksum": "sha256:f89752780981d11707e7eee3ca7b5a7f52e91e60ee28bd9e1815c7da05741c4a"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

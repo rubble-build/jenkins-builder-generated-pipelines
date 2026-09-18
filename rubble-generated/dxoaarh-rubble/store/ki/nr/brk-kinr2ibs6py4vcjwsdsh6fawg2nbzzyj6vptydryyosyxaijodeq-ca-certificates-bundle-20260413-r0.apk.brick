@@ -1,0 +1,28 @@
+{ "id": "kinr2ibs6py4vcjwsdsh6fawg2nbzzyj6vptydryyosyxaijodeq-ca-certificates-bundle-20260413-r0.apk"
+, "name": "ca-certificates-bundle-20260413-r0.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/ca-certificates-bundle-20260413-r0.apk"
+  , "checksum": "sha256:79bcf4fd3818e37cb7760033abb82387042c15cd7675f814d4c25e95d6ff24aa"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

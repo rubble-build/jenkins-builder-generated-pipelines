@@ -1,0 +1,28 @@
+{ "id": "2zxw44fhgjzrjfdxfy2wdkkicv2mhyh6d36apzqury43ieyngenq-linux-headers-6.6-r1.apk"
+, "name": "linux-headers-6.6-r1.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/linux-headers-6.6-r1.apk"
+  , "checksum": "sha256:775cfa57ca5475d6dd87527a9889f6934e1dda11331060b7aee761d54a7c9949"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

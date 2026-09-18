@@ -1,0 +1,28 @@
+{ "id": "wdo34y7tme4bosf2fda6yjm7eqqsvedws6mqugeq2ixcennl3ikq-libssl3-3.3.7-r0.apk"
+, "name": "libssl3-3.3.7-r0.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/libssl3-3.3.7-r0.apk"
+  , "checksum": "sha256:bd50e1a43eba14a47f90076d99297ca01cb2ede6d70ccea27062552adc4bbeb6"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

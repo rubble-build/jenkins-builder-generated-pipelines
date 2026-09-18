@@ -1,0 +1,28 @@
+{ "id": "fxdlr54bss5xchltnftplbazx75gkxrblhjswghx525wntx4z47q-binaryen-version_117-x86_64-linux.tar.gz"
+, "name": "binaryen-version_117-x86_64-linux.tar.gz"
+, "src": {
+    "url": "https://github.com/WebAssembly/binaryen/releases/download/version_117/binaryen-version_117-x86_64-linux.tar.gz"
+  , "checksum": "sha256:3dc677006555b355ea2da5e82602065a161d5e83eaefd3f759afa00b96e83212"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

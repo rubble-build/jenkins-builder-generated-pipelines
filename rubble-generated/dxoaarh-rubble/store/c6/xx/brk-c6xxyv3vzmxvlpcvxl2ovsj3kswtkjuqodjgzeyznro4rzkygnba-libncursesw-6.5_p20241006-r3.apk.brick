@@ -1,0 +1,28 @@
+{ "id": "c6xxyv3vzmxvlpcvxl2ovsj3kswtkjuqodjgzeyznro4rzkygnba-libncursesw-6.5_p20241006-r3.apk"
+, "name": "libncursesw-6.5_p20241006-r3.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/libncursesw-6.5_p20241006-r3.apk"
+  , "checksum": "sha256:3919cf673e841d91865213799ccfd5f77a48f5f9f5402723167470295ee32a49"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

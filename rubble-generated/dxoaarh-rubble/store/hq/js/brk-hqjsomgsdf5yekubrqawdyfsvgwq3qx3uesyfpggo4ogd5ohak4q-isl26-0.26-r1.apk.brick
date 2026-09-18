@@ -1,0 +1,28 @@
+{ "id": "hqjsomgsdf5yekubrqawdyfsvgwq3qx3uesyfpggo4ogd5ohak4q-isl26-0.26-r1.apk"
+, "name": "isl26-0.26-r1.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/isl26-0.26-r1.apk"
+  , "checksum": "sha256:fad45095620e08c1410260cfef6723cc318dc9e554821cced49d263a9d1b4064"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}
