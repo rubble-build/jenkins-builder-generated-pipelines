@@ -1,0 +1,28 @@
+{ "id": "apwv2emy6cpgfjhifot4on26vbuiigqxu2nabpoyf42xknawsowa-gmp-6.2.1.tar.bz2"
+, "name": "gmp-6.2.1.tar.bz2"
+, "src": {
+    "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.bz2"
+  , "checksum": "sha256:eae9326beb4158c386e39a356818031bd28f3124cf915f8c5b1dc4c7a36b4d7c"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

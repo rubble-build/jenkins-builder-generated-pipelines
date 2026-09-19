@@ -1,0 +1,28 @@
+{ "id": "r2zdfg556hdsebpb4sscmxl7y53r4bjcp3v4ux3ky6y2nzy6bs3a-glibc-2.40.tar.xz"
+, "name": "glibc-2.40.tar.xz"
+, "src": {
+    "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.40.tar.xz"
+  , "checksum": "sha256:19a890175e9263d748f627993de6f4b1af9cd21e03f080e4bfb3a1fac10205a2"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

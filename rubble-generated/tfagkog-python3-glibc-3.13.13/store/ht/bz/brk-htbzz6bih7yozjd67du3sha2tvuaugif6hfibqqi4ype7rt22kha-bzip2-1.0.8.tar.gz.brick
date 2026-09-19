@@ -1,0 +1,28 @@
+{ "id": "htbzz6bih7yozjd67du3sha2tvuaugif6hfibqqi4ype7rt22kha-bzip2-1.0.8.tar.gz"
+, "name": "bzip2-1.0.8.tar.gz"
+, "src": {
+    "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
+  , "checksum": "sha256:ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

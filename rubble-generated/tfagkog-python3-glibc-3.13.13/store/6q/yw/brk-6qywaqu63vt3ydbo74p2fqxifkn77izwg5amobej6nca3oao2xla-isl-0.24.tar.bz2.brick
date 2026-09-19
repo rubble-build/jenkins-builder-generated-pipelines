@@ -1,0 +1,28 @@
+{ "id": "6qywaqu63vt3ydbo74p2fqxifkn77izwg5amobej6nca3oao2xla-isl-0.24.tar.bz2"
+, "name": "isl-0.24.tar.bz2"
+, "src": {
+    "url": "https://libisl.sourceforge.io/isl-0.24.tar.bz2"
+  , "checksum": "sha256:fcf78dd9656c10eb8cf9fbd5f59a0b6b01386205fe1934b3b287a0a1898145c0"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{ "id": "cm5le2xhmapvc7ocadlvrx3k7n7bf35nr6rodwvc5fktgx62urkq-zlib-1.3.2.tar.gz"
+, "name": "zlib-1.3.2.tar.gz"
+, "src": {
+    "url": "https://zlib.net/zlib-1.3.2.tar.gz"
+  , "checksum": "sha256:bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

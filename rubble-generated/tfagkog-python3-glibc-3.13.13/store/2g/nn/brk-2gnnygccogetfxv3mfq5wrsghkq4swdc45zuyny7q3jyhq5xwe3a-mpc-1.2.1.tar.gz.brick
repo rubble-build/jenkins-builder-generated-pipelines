@@ -1,0 +1,28 @@
+{ "id": "2gnnygccogetfxv3mfq5wrsghkq4swdc45zuyny7q3jyhq5xwe3a-mpc-1.2.1.tar.gz"
+, "name": "mpc-1.2.1.tar.gz"
+, "src": {
+    "url": "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz"
+  , "checksum": "sha256:17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

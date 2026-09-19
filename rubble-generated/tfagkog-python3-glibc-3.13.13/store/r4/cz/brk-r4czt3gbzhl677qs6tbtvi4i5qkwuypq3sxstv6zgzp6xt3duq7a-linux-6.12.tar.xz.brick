@@ -1,0 +1,28 @@
+{ "id": "r4czt3gbzhl677qs6tbtvi4i5qkwuypq3sxstv6zgzp6xt3duq7a-linux-6.12.tar.xz"
+, "name": "linux-6.12.tar.xz"
+, "src": {
+    "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz"
+  , "checksum": "sha256:b1a2562be56e42afb3f8489d4c2a7ac472ac23098f1ef1c1e40da601f54625eb"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

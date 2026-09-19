@@ -1,0 +1,28 @@
+{ "id": "ljxgs3o5vy4ctwwtmrawnn6r5gbfvqcor7loyeecc2v54wdsjp4q-popt-1.19-r4.apk"
+, "name": "popt-1.19-r4.apk"
+, "src": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/popt-1.19-r4.apk"
+  , "checksum": "sha256:087e8b745645ddf300bf6d572d22c14b78d95f4c0b93d8732a2b208526d23678"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}

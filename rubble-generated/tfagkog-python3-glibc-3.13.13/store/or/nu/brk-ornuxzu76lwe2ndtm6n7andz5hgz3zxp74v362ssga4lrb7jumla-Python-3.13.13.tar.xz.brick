@@ -1,0 +1,28 @@
+{ "id": "ornuxzu76lwe2ndtm6n7andz5hgz3zxp74v362ssga4lrb7jumla-Python-3.13.13.tar.xz"
+, "name": "Python-3.13.13.tar.xz"
+, "src": {
+    "url": "https://www.python.org/ftp/python/3.13.13/Python-3.13.13.tar.xz"
+  , "checksum": "sha256:2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71"
+  }
+, "env": [
+    { "name": "IMPURE_ENV"
+    , "value": "all_proxy http_proxy https_proxy no_proxy" }
+  ]
+, "var": [
+    { "name": "__rubble_skip_src_split__"
+    , "value": "true"
+    }
+  ]
+, "outputs": [
+    { "name": "out" }
+  ]
+, "builder": [
+    { "shell": {
+        "value": [
+          "cp -ar \"$src\" \"$out\""
+        ]
+      , "format": "text"
+      }
+    }
+  ]
+}
