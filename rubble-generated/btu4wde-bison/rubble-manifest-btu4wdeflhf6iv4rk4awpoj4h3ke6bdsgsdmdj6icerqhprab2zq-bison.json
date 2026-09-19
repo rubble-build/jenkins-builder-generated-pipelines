@@ -1,0 +1,55 @@
+{
+  "planId": "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison",
+  "roots": [
+    {
+      "id": "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison",
+      "short": "btu4wde-bison",
+      "name": "bison",
+      "brickFile": "rubble-generated/btu4wde-bison/store/bt/u4/brk-btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison.brick"
+    }
+  ],
+  "scheduler": {
+    "maxRunning": 3,
+    "maxReady": 8,
+    "cleanOnSuccess": true,
+    "buildScope": "missing"
+  },
+  "buildScript": "rubble-generated/btu4wde-bison/build-brick.sh",
+  "tasks": {
+    "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison": {
+      "short": "btu4wde-bison",
+      "name": "bison",
+      "displayName": "btu4wde-bison-bison",
+      "kind": "brick",
+      "brickFile": "rubble-generated/btu4wde-bison/store/bt/u4/brk-btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison.brick",
+      "prerequisites": [
+        "rubble-generated/btu4wde-bison/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/btu4wde-bison/store/cc/a6/brk-cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4.brick",
+        "rubble-generated/btu4wde-bison/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "buildAllowed": false,
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260918085243-35325317743-1/x86_64-linux-pbai6fg-rubble.tar",
+      "runtimeId": "pbai6fg-rubble"
+    },
+    "release": {
+      "short": "release",
+      "name": "release",
+      "displayName": "Release btu4wde-bison",
+      "kind": "release",
+      "deps": [
+        "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260918085243-35325317743-1/x86_64-linux-pbai6fg-rubble.tar",
+      "runtimeId": "pbai6fg-rubble"
+    }
+  }
+}
