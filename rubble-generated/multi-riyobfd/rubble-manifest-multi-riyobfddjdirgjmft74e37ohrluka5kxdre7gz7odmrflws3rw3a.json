@@ -1,0 +1,80 @@
+{
+  "planId": "multi-riyobfddjdirgjmft74e37ohrluka5kxdre7gz7odmrflws3rw3a",
+  "roots": [
+    {
+      "id": "itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2",
+      "short": "itxgxgp-bzip2",
+      "name": "bzip2",
+      "brickFile": "rubble-generated/multi-riyobfd/store/it/xg/brk-itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2.brick"
+    },
+    {
+      "id": "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison",
+      "short": "btu4wde-bison",
+      "name": "bison",
+      "brickFile": "rubble-generated/multi-riyobfd/store/bt/u4/brk-btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison.brick"
+    }
+  ],
+  "scheduler": {
+    "maxRunning": 3,
+    "maxReady": 8,
+    "cleanOnSuccess": true,
+    "buildScope": "missing"
+  },
+  "buildScript": "rubble-generated/multi-riyobfd/build-brick.sh",
+  "tasks": {
+    "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison": {
+      "short": "btu4wde-bison",
+      "name": "bison",
+      "displayName": "btu4wde-bison-bison",
+      "kind": "brick",
+      "brickFile": "rubble-generated/multi-riyobfd/store/bt/u4/brk-btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison.brick",
+      "prerequisites": [
+        "rubble-generated/multi-riyobfd/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick",
+        "rubble-generated/multi-riyobfd/store/cc/a6/brk-cca6hpdxtvtjn3hkbljrizdlu2cpldgeodds67hxlcf2nhclfc5a-m4.brick",
+        "rubble-generated/multi-riyobfd/store/bx/ch/brk-bxchorbehgapcopsqwo7w5zwjgenujywlkkytlnad3dvy5hpqc5q-bash.brick"
+      ],
+      "buildAllowed": false,
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260918085243-35325317743-1/x86_64-linux-pbai6fg-rubble.tar",
+      "runtimeId": "pbai6fg-rubble"
+    },
+    "itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2": {
+      "short": "itxgxgp-bzip2",
+      "name": "bzip2",
+      "displayName": "itxgxgp-bzip2-bzip2",
+      "kind": "brick",
+      "brickFile": "rubble-generated/multi-riyobfd/store/it/xg/brk-itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2.brick",
+      "prerequisites": [
+        "rubble-generated/multi-riyobfd/store/zk/if/brk-zkiff2cic77r6rxw3quhxg6gu4rznq4omwpz5tui7zwbvlqj6mbq-ld-musl.so.brick"
+      ],
+      "buildAllowed": false,
+      "deps": [],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260918085243-35325317743-1/x86_64-linux-pbai6fg-rubble.tar",
+      "runtimeId": "pbai6fg-rubble"
+    },
+    "release": {
+      "short": "release",
+      "name": "release",
+      "displayName": "Release multi-riyobfd",
+      "kind": "release",
+      "deps": [
+        "itxgxgppoxlnoqfhav4tgvdmsqhkb6xraelfh5my4ex6t6asd6jq-bzip2",
+        "btu4wdeflhf6iv4rk4awpoj4h3ke6bdsgsdmdj6icerqhprab2zq-bison"
+      ],
+      "label": "x86_64-linux",
+      "executionOsFamily": "unix",
+      "platform": "x86_64-linux",
+      "importerUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260914034639-34803620985-1/x86_64-linux-vyv4icp-rubble-inventory-bundle-import.sh",
+      "bundleUrl": "https://github.com/rubble-build/RubbleR-releases/releases/download/20260918085243-35325317743-1/x86_64-linux-pbai6fg-rubble.tar",
+      "runtimeId": "pbai6fg-rubble"
+    }
+  }
+}
