@@ -3,6 +3,12 @@
 set -euo pipefail
 source "${RUBBLE_CI_RUNTIME:?}"
 rubble-exec mkdir -p -- "${RUBBLE_RELEASE_DIR:?}/assets"
-"${rubble}" script --inherit-env rubble-inventory-bundle export \
-  --output "${RUBBLE_RELEASE_DIR}/assets/${RUBBLE_ROOT_ID:0:7}-${RUBBLE_ROOT_NAME}.tar" \
-  --depth 0 --inventory-file "${RUBBLE_RELEASE_INVENTORY}" "${RUBBLE_ROOT_BRICK}"
+for root_id in "${rubble_roots[@]}"; do
+  asset_name="${rubble_root_short_ids[$root_id]}.tar"
+  if [[ -n "${rubble_root_platforms[$root_id]}" ]]; then
+    asset_name="${rubble_root_platforms[$root_id]}-${asset_name}"
+  fi
+  "${rubble}" script --inherit-env rubble-inventory-bundle export \
+    --output "${RUBBLE_RELEASE_DIR}/assets/${asset_name}" \
+    --depth 1 "${rubble_root_bricks[$root_id]}"
+done
